@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Bizmania helper",
+  "version": "0.1",
+  "description": "Chrome extention for bizmania.ru",
+  "icons": {
+    "128": "128.png",
+    "48": "48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "app.js" ]
+    }
+  ],
+  "action": {
+    "default_popup":"popup.html"
+  },
+  "permissions": ["scripting", "activeTab"],
+  "background":{}
+}
